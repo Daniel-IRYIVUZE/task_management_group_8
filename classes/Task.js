@@ -1,4 +1,4 @@
-
+// Represents a single task in the Task Manager application
 const { v4: uuidv4 } = require("uuid");
 
 class Task {
