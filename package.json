@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "uuid": "^11.1.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [
+    "task",
+    "cli",
+    "manager",
+    "oop",
+    "nodejs"
+  ],
+  "author": "Yusuf Molumo",
+  "license": "MIT",
+  "description": "A command-line task manager using Node.js, OOP, and file management.",
+  "devDependencies": {
+    "@eslint/js": "^9.31.0",
+    "eslint": "^9.31.0",
+    "globals": "^16.3.0",
+    "prettier": "^3.6.2"
+  }
+}
