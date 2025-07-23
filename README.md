@@ -27,7 +27,7 @@ A command-line Task Manager using Node.js, OOP, and MongoDB for persistent stora
    npm install
    ```
 3. **Set up MongoDB:**
-   - Ensure MongoDB is running locally at `mongodb://localhost:27017/`
+   - Ensure MongoDB is running locally at your MongoDB URI
    - The app will use a database named `task_manager`
 4. **Run the application:**
    ```sh
@@ -49,16 +49,6 @@ A command-line Task Manager using Node.js, OOP, and MongoDB for persistent stora
 ## Usage
 - Follow CLI prompts to add, view, update, or delete tasks.
 - Filter/search tasks by status, priority, or due date.
-
-## OOP Principles
-- **Encapsulation:** Task data and logic are encapsulated in classes.
-- **Inheritance:** Easily extendable for different task types.
-- **Polymorphism:** Common operations can be overridden for new task types.
-- **Abstraction:** File/database operations are abstracted from business logic.
-
-## Contribution
-- Fork the repo, create a feature branch, and submit a pull request.
-- Follow code style guidelines (ESLint, Prettier).
 
 ## License
 MIT 
