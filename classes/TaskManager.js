@@ -1,4 +1,3 @@
-// TaskManager.js
 // Manages the collection of tasks and handles file persistence
 const fs = require("fs");
 const path = require("path");
