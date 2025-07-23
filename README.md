@@ -19,7 +19,7 @@ A command-line Task Manager using Node.js, OOP, and MongoDB for persistent stora
 ## Setup Instructions
 1. **Clone the repository:**
    ```sh
-   git clone <your-repo-url>
+   git clone https://github.com/Daniel-IRYIVUZE/task_management_group_8
    cd task-manager-cli
    ```
 2. **Install dependencies:**
