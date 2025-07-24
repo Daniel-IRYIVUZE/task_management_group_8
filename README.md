@@ -12,7 +12,7 @@ A command-line Task Manager using Node.js, OOP, and MongoDB for persistent stora
 ## Technologies
 - Node.js
 - JavaScript (ES6+)
-- MongoDB (Mongoose)
+- MongoDB 
 - Inquirer.js
 - ESLint, Prettier, Jest
 
