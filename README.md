@@ -1,12 +1,12 @@
 # **Task Manager CLI Application**
 
-This is a command-line based Task Manager application developed using **Node.js** and **MongoDB**, applying solid **Object-Oriented Programming (OOP)** principles. It allows users to manage tasks directly from the terminal through an intuitive interface powered by **Inquirer.js**. The project emphasizes clean, modular design and collaborative development best practices.
+This is a command-line-based Task Manager application developed using **Node.js** and **MongoDB**, applying solid **Object-Oriented Programming (OOP)** principles. It allows users to manage tasks directly from the terminal through an intuitive interface powered by **Inquirer.js**. The project emphasizes clean, modular design and collaborative development best practices.
 
 ---
 
 ## **Project Overview**
 
-The application was developed as a group assignment with a focus on software design, backend logic, and teamwork. It supports full CRUD operations—**Create**, **Read**, **Update**, and **Delete**—alongside search and filter capabilities. All task data is stored persistently using **MongoDB**, ensuring information is retained across sessions.
+The application was developed as a group assignment with a focus on software design, backend logic, and teamwork. It supports full CRUD operations **Create**, **Read**, **Update**, and **Delete** alongside search and filter capabilities. All task data is stored persistently using **MongoDB**, ensuring information is retained across sessions.
 
 OOP principles such as **encapsulation**, **modularity**, and **abstraction** were at the core of the design, resulting in a maintainable and extensible codebase. Team members collaborated on feature development, testing, error handling, documentation, and project planning.
 
@@ -158,6 +158,6 @@ All supporting documentation is available in the repository root or online:
 
 Watch the full demo showing how to use the CLI application:
 
-[Video Recording (Google Drive)](https://drive.google.com/file/d/1i52jfrwlP1Nttt__pCoaNZWSfOaFHuiA/view?usp=sharing)
+[Video Recording](https://drive.google.com/file/d/1i52jfrwlP1Nttt__pCoaNZWSfOaFHuiA/view?usp=sharing)
 
 ---
