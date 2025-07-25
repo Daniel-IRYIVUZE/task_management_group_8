@@ -56,12 +56,7 @@ task_management_group_8/
 │   └── helpers.js           # Utility functions (if needed)
 │
 ├── index.js                 # Main entry point
-│
-├── Group 8 Project Proposal.docx
-├── Group 8 Software Documentation.docx
-├── Group 8 Contribution Report.docx
-├── Link to Video Recording.docx
-│
+|
 ├── package.json             # Project metadata and scripts
 ├── .eslintrc.json           # ESLint config
 ├── .prettierrc              # Prettier config
