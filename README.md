@@ -1,144 +1,168 @@
-# Task Manager CLI Application
+# **Task Manager CLI Application**
 
-This is a command-line based Task Manager application built using **Node.js**, applying **Object-Oriented Programming (OOP)** principles. The project uses **MongoDB** for persistent storage, **Inquirer.js** for user interaction, and follows software development best practices such as modular code structure, clean coding conventions, and effective team collaboration.
+This is a command-line based Task Manager application developed using **Node.js** and **MongoDB**, applying solid **Object-Oriented Programming (OOP)** principles. It allows users to manage tasks directly from the terminal through an intuitive interface powered by **Inquirer.js**. The project emphasizes clean, modular design and collaborative development best practices.
 
-The goal of this project was to provide a simple yet functional system where users can manage tasks directly from the terminal. Users can add, view, update, delete, and search/filter tasks based on various parameters such as status, priority, and due date.
+---
 
-## Project Overview
+## **Project Overview**
 
-The application was developed as part of a group project assignment with a strong emphasis on collaborative development, software design patterns, and full-stack architecture. We focused on building a reliable backend that demonstrates OOP concepts such as encapsulation, abstraction, and modular class design.
+The application was developed as a group assignment with a focus on software design, backend logic, and teamwork. It supports full CRUD operations—**Create**, **Read**, **Update**, and **Delete**—alongside search and filter capabilities. All task data is stored persistently using **MongoDB**, ensuring information is retained across sessions.
 
-The system maintains a clean command-line interface and stores tasks persistently using MongoDB, ensuring data is saved between sessions.
+OOP principles such as **encapsulation**, **modularity**, and **abstraction** were at the core of the design, resulting in a maintainable and extensible codebase. Team members collaborated on feature development, testing, error handling, documentation, and project planning.
 
-## Features
+---
 
-- Add new tasks with title, description, due date, status, and priority.
-- View all existing tasks in a user-friendly format.
-- Update task attributes (e.g., status or due date).
-- Delete tasks by ID.
-- Filter and search tasks by status, priority, or due date.
-- Persistent storage via MongoDB to maintain data.
-- Clean and modular code following Object-Oriented Programming principles.
-- Simple and intuitive command-line interface using Inquirer.js.
-- Code formatting using Prettier and ESLint for consistency.
-- Unit testing using Jest for reliability.
+## **Key Features**
 
-## Technologies Used
+* Add new tasks with title, description, due date, status, and priority.
+* View all existing tasks in a readable terminal format.
+* Update task attributes such as status, description, or due date.
+* Delete tasks by ID.
+* Search and filter tasks by status, priority, or due date.
+* Interactive CLI using **Inquirer.js**.
+* Persistent data storage using **MongoDB**.
+* Well-structured, OOP-based code (Task, TaskManager classes).
+* Input validation and error handling.
+* Code formatting with **Prettier** and **ESLint**.
+* Unit testing with **Jest**.
 
-- **Node.js** – Server-side runtime environment for building the CLI logic.
-- **JavaScript (ES6+)** – Main programming language using modern syntax.
-- **MongoDB** – NoSQL database used for storing tasks persistently.
-- **Mongoose** – ODM (Object Data Modeling) tool for MongoDB integration.
-- **Inquirer.js** – Library to prompt users and capture inputs in the terminal.
-- **Prettier** – Used to maintain consistent code formatting.
-- **ESLint** – Ensures JavaScript code quality and syntax checks.
-- **Jest** – Testing framework used to verify the application’s behavior.
+---
 
-## Application Structure
+## **Technologies Used**
 
-The application is structured to be modular, readable, and scalable. All business logic is encapsulated in classes, and responsibilities are separated across files.
+| Technology        | Purpose                         |
+| ----------------- | ------------------------------- |
+| Node.js           | Backend runtime for CLI logic   |
+| JavaScript (ES6+) | Core programming language       |
+| MongoDB           | NoSQL database for task storage |
+| Mongoose          | ODM to interface with MongoDB   |
+| Inquirer.js       | CLI input prompts               |
+| ESLint            | Code quality and linting        |
+| Prettier          | Code formatting                 |
+| Jest              | Unit testing framework          |
+
+---
+
+## **Project Structure**
 
 ```
-
-task\_management\_group\_8/
+task_management_group_8/
 │
 ├── classes/
-│   ├── Task.js              # Task class: defines task attributes and structure
-│   └── TaskManager.js       # TaskManager class: methods for CRUD operations
+│   ├── Task.js              # Task class: task structure
+│   └── TaskManager.js       # Handles CRUD operations
 │
 ├── utils/
-│   └── helpers.js           # Placeholder for utility functions (if needed)
+│   └── helpers.js           # Utility functions (if needed)
 │
-├── index.js                 # Entry point; integrates CLI and core functionality
+├── index.js                 # Main entry point
 │
 ├── Group 8 Project Proposal.docx
 ├── Group 8 Software Documentation.docx
 ├── Group 8 Contribution Report.docx
 ├── Link to Video Recording.docx
-├── README.md
-├── package.json             # Project configuration and dependencies
-├── .eslintrc.json           # ESLint configuration
-├── .prettierrc              # Prettier configuration
+│
+├── package.json             # Project metadata and scripts
+├── .eslintrc.json           # ESLint config
+├── .prettierrc              # Prettier config
+└── README.md
+```
 
-````
+---
 
-## Setup Instructions
+## **Setup Instructions**
 
-To set up and run this application on your local machine, follow the steps below:
+### 1. Clone the Repository
 
-1. **Clone the Repository**
+```bash
+git clone https://github.com/Daniel-IRYIVUZE/task_management_group_8.git
+cd task_management_group_8
+```
 
-   Open your terminal and clone the repository using Git:
-   ```bash
-   git clone https://github.com/Daniel-IRYIVUZE/task_management_group_8.git
-   cd task_management_group_8
-````
+### 2. Install Dependencies
 
-2. **Install Project Dependencies**
+```bash
+npm install
+```
 
-   Use npm to install all required packages:
+### 3. Set Up MongoDB
 
-   ```bash
-   npm install
-   ```
+Ensure MongoDB is installed and running. Optionally set your own connection URI via environment variables.
 
-3. **Set Up MongoDB**
+* The app connects to a database named `task_manager`.
 
-   Ensure that MongoDB is installed and running locally or provide your connection string in the environment file (if implemented).
-   The application connects to a MongoDB database named `task_manager`.
+### 4. Run the Application
 
-4. **Run the Application**
+```bash
+npm start
+```
 
-   Start the application using:
+Follow the CLI prompts to add, update, delete, or view tasks.
 
-   ```bash
-   npm start
-   ```
+---
 
-   You will be presented with interactive CLI prompts to manage your tasks.
+## **Usage Guide**
 
-## Usage Instructions
+Once launched:
 
-* Once the application starts, follow the terminal prompts to perform operations:
+* Add tasks by providing relevant details.
+* View tasks listed with title, status, due date, and priority.
+* Update existing tasks using their IDs.
+* Delete tasks by selecting from the list.
+* Filter or search based on task parameters.
 
-  * Add a new task by entering title, description, due date, priority, and status.
-  * View all tasks with their detailed information.
-  * Update or delete tasks based on their ID.
-  * Filter tasks based on different criteria.
-* All data is saved and retrieved from MongoDB.
+All data is saved automatically in MongoDB.
 
-## Team Contributions
+---
 
-This project was completed by **Group 8**. Below are individual contributions from each team member:
+## **Team Contributions**
 
-### 1. Yusuf Molumo
+This project was developed by **Group 8**. Below is a summary of each member's contributions:
 
-Handled the backend integration with MongoDB to implement persistent storage. Led the implementation of error handling and input validation. Developed the command-line interface using Inquirer.js. Contributed to the `README.md`, added code formatting using Prettier, and supported unit testing using Jest.
+### Yusuf Molumo
 
-### 2. Daniel Iryivuze – Project Lead & OOP Architect
+* Integrated MongoDB for persistent storage.
+* Implemented error handling and input validation.
+* Developed the CLI interface with Inquirer.js.
+* Supported testing using **Jest** and formatting with **Prettier**.
+* Contributed to the `README.md` and general bug fixing.
 
-Led the overall project development and architecture planning. Designed the Use Case Diagram to define system-user interactions and the application's flow. Implemented the `Task.js` and `TaskManager.js` files, defining the core task structure and all CRUD operations using OOP principles to ensure modularity and maintainability. Also guided version control and team coordination.
+### Daniel Iryivuze (Project Lead & OOP Architect)
 
-### 3. Latjor Wuon Lat Dak
+* Led system design and architectural planning.
+* Created the Use Case Diagram and UML Class Diagram.
+* Developed core logic in `Task.js` and `TaskManager.js` using OOP.
+* Coordinated Git workflow and team communication.
 
-Assisted in designing the CLI structure and prompt flow using Inquirer.js. Provided documentation support, especially the `README.md`. Participated in usability testing, ensuring a smooth user experience, and reviewed application flow for accessibility.
+### Latjor Wuon Lat Dak
 
-### 4. Nickitta Umuganwa Asimwe
+* Designed user interaction flows with Inquirer.js.
+* Reviewed terminal usability and accessibility.
+* Contributed to writing and revising documentation.
 
-Contributed to writing and reviewing documentation including the setup guide and general `README.md` content. Participated in testing by manually running the CLI and identifying edge cases. Assisted in creating the UML Class Diagram and ensured documentation adhered to proper academic standards.
+### Nickitta Umuganwa Asimwe
 
-## Supporting Documents
+* Wrote and edited documentation (README, setup guide).
+* Reviewed final documentation for academic and technical clarity.
+* Participated in manual testing and edge case identification.
+* Contributed to UML Class Diagram creation.
 
-The following documents are included in the root folder of the repository:
+---
+
+## **Supporting Documents**
+
+All supporting documentation is available in the repository root or online:
 
 * [Group 8 Project Proposal](https://docs.google.com/document/d/1aVzYEF8ShiFePPJSqGLkvBRrXPAUZyj3Hx4tp_RzazI/edit?usp=sharing)
 * [Group 8 Software Documentation](https://docs.google.com/document/d/1hTU7aSsgEm3_f3PBivsmbMhMGZ7M8F02XDw2g3uYdxo/edit?usp=sharing)
-* [Group 8 Contribution Report][(https://docs.google.com/document/d/1E7o8dVvuCMgT7Gp-d0D5fEeCCn1-Dy7qn83j8qtRTjE/edit?usp=sharing)
+* [Group 8 Contribution Report](https://docs.google.com/document/d/1E7o8dVvuCMgT7Gp-d0D5fEeCCn1-Dy7qn83j8qtRTjE/edit?usp=sharing)
 
-## Video Walkthrough
+---
 
-A complete demo video is linked in the following file:
+## **Video Demonstration**
 
-* [Video Recording Link](https://drive.google.com/file/d/1i52jfrwlP1Nttt__pCoaNZWSfOaFHuiA/view?usp=sharing)
+Watch the full demo showing how to use the CLI application:
+
+[Video Recording (Google Drive)](https://drive.google.com/file/d/1i52jfrwlP1Nttt__pCoaNZWSfOaFHuiA/view?usp=sharing)
 
 ---
